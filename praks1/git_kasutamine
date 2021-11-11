@@ -1,9 +1,12 @@
 
 *root kasutajana:
 installi - apt-get install git
-*tavakasutajana:
-esmakordselt:
 
+*tavakasutajana:
+su user - Läheb tavakasutajasse
+
+esmakordselt:
+Seadistame meie Git kasutaja ja repo
 a) seadista - määra kasutajanimi, email, editor
 git config --global user.name "Kaspar Karro"
 git config --global user.email kasutaja@nimi
