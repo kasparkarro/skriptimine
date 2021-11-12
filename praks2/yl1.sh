@@ -1,8 +1,10 @@
 #!/bin/bash
 
-#Skript, mis väljastab Echo käsu ning kasutab selleks eraldi muutujat
-#Muutuja jaoks peab kasutama dollari märki
+#Skript, mis väljastab Echo käsu
+#-n on selle jaoks, et väljastada järgmisele reale
+#kui vajutan  enda klaviatuuril shift ja del kõrval nuppu, siis  saan
+#tagurpidi ülakomad. Sellega saab käsku sõnena väljastada
 
-kasutaja=$(whoami)
-
-echo "Tere, $kasutaja!"
+echo -n "Tere, "
+echo -n `whoami`
+echo "!"
