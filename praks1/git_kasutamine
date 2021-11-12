@@ -29,4 +29,8 @@ f)git remote kontroll
 git remote -v
 
 põhikasutamine 
-git add failinimi
+1) git add failinimi
+git status, et näha kas muudatused on tehtud
+
+2) git commit -m "kommentaar"
+3) git push -uf skriptimine master
