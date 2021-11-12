@@ -8,7 +8,7 @@ date +"Today is %A,%B %d,%Y"
 date +"Time is %H:%M"
 echo " "
 echo -n "Calendar of"
-cal 12 2021
+cal 
 
 
 
