@@ -6,5 +6,6 @@
 #tagurpidi ülakomad. Sellega saab käsku sõnena väljastada
 
 echo -n "Tere, "
-echo -n `whoami`
+echo -n `whoami|cut -c1|tr [a-z] [A-Z]`
+echo -n `whoami |cut -c2-`
 echo "!"
