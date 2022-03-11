@@ -1,4 +1,4 @@
-﻿$file = "C:\Users\Administrator\Desktop\praks2\adkasutajad.csv"
+﻿$file = "C:\Users\Administrator\Desktop\skriptimine\praks2\adkasutajad.csv"
 #Impordi faili sisu
 $users = Import-Csv $file -Encoding Default -Delimiter ";"
 #foreach user row in file
@@ -23,7 +23,9 @@ foreach ($user in $users){
         -Department $user.Department `
         -UserPrincipalName $upname `
         -AccountPassword (ConvertTo-SecureString $user.Password -AsPlainText -force) -Enabled $true
+         echo "New user $Username added succesfully."
         }
+
     
 }
 function Translit {
