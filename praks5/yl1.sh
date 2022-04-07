@@ -8,6 +8,6 @@ read b
 
 aruudus=$(($a**2))
 bruudus=$(($b**2))
-cruudus=$(($a+$b))
+cruudus=$(($aruudus+$bruudus))
 hypotenuus=`echo "scale=2;sqrt($cruudus)"|bc`
 echo $hypotenuus
